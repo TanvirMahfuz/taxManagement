@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<script>
+  function clicked1(){
+      window.location.href="http://localhost:8080/NewUser"
+  }
+  function clicked2(){
+      window.location.href="http://localhost:8080/NewLawyer"
+  }
+
+</script>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-image: url('../static/image/HomeBacground.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 1rem; /* Add gap between items */
+        }
+        .btn-custom {
+            background-color: #859F93;
+            color: white;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #57A35F;
+        }
+
+    </style>
+</head>
+<body class="body">
+This is PreHome<br>
+<div class="container">
+
+    <button class="btn btn-custom btn-lg" onclick="clicked1()">Create User Account </button>
+    <button class="btn btn-custom btn-lg" onclick="clicked2()">Create Lawyer Account </button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
